@@ -11,15 +11,11 @@ El archivo Javascript principal es `script.js`, que contiene las siguientes func
 
 ### Generar un número aleatorio
 
-javascriptCopy code
-
 `let numeroAzar = Math.floor(Math.random() * 100) + 1;` 
 
 Esta línea de código genera un número aleatorio entre 1 y 100 y lo guarda en la variable `numeroAzar`. Utilizamos `Math.random()` para generar un número decimal entre 0 y 1, luego lo multiplicamos por 100 para obtener un número entre 0 y 100, y finalmente utilizamos `Math.floor()` para redondear hacia abajo y obtener un número entero entre 0 y 99. Al sumar 1 al resultado, obtenemos un número aleatorio entre 1 y 100.
 
 ### Obtener elementos del DOM
-
-javascriptCopy code
 
 `let numeroEntrada = document.getElementById('numeroEntrada');
 let mensaje = document.getElementById('mensaje');` 
@@ -27,8 +23,6 @@ let mensaje = document.getElementById('mensaje');`
 Estas líneas de código obtienen referencias a los elementos del Document Object Model (DOM) utilizando el método `getElementById()`. El elemento con el id "numeroEntrada" representa el campo de entrada donde el usuario ingresa su número, y el elemento con el id "mensaje" muestra mensajes de retroalimentación al usuario.
 
 ### Función para comprobar el número ingresado
-
-javascriptCopy code
 
 `function chequearResultado() {
     let numeroIngresado = parseInt(numeroEntrada.value);
